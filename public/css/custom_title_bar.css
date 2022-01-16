@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(235, 229, 229);
+}
+
+#title_bar {
+    background-color: rgb(151, 146, 146);
+    text-align: center;
+}
+
+.navbar {
+    background-color: grey;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: rgb(79, 81, 88);
+    transition: 0.2s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+.dropdown-menu {
+    background-color: rgb(244, 245, 245);
+}
+
+.dropdown-menu:hover::after {
+    color: white;
+}
+#search_div {
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
+    border-radius: 10px;
+    height: auto; 
+    background-color: rgb(189, 197, 204);
+}
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.card-header {
+    background-color: rgb(189, 197, 204);
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 3px  solid #333 !important
+}
+.card-header:first-child {
+  border-radius: 0 0 10px 10px !important;
+  opacity: 0.6;
+}
+.form-control {
+    position: relative;
+    margin: 30px 0;
+    width: 350px;
+  }
+  
+  .form-control input {
+    border: 0;
+    border-bottom: 2px solid #333;
+    padding: 15px 0;
+    display: block;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+    transition: 0.1s ease-in;
+  }
+  
+  .form-control input:focus, 
+  .form-control input:valid {
+    border-bottom-color: rgb(112, 111, 111);
+    outline: none;
+  }
+  
+  .form-control input:focus + label span ,
+  .form-control input:valid + label span{
+    color: rgb(112, 111, 111);
+    transform: translateY(-20px);
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #arrow_div {
+    margin-left: -50px;
+    margin-right: -50px;
+      border-radius: 5px;
+      background-color: gray;
+  }
+
+  .modal-header {
+    background-color: rgb(135, 135, 141);
+  }
+  .modal-title{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1.5px #bebebe;
+  }
+  .modal-content {
+    text-align: center;  
+  }
+  .form-input {
+    background-color: rgb(216, 213, 216);
+    box-shadow: 2px 3px rgb(109, 109, 109);
+    border-radius: 10px;
+    opacity: 0.5;
+  }
+  .form-btn {
+    color: rgb(43, 46, 46);
+    width: 150px;
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+  }
+
+  .form-btn:hover {
+    background-color: rgb(224, 225, 226);
+  }
+
+  .button:active {
+    background-color: #b4b4b4;
+    box-shadow: 2px 5px rgb(88, 88, 88);
+    transform: translateY(4px);
+  }
+  #register {
+    z-index: 99999;
+  }
+  .btn-outline-warning:hover {
+    background-color: darkslategray;
+  }
